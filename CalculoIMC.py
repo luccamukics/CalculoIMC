@@ -19,9 +19,13 @@ if imc < 18.5:
     print('Voce esta abaixo do peso ideal!')
 elif imc >= 18.5 and imc <= 24.9:
     print('{}Voce esta no peso ideal!{}\nParabens {}!'.format(cores['verde'], cores['limpa'], nome))
+    print('Seu IMC é {}{:.2f}{}'.format(cores['verde'], imc, cores['limpa']))
 elif imc >= 25 and imc <= 29.9:
     print('{}Voce esta com sobrepeso!{} Recomendo que melhore seus habitors alimentares e pratique mais atividades fisicas {}!'.format(cores['amarelo'], cores['limpa'], nome))
+    print('Seu IMC é de {}{:.2f}{}'.format(cores['amarelo'], imc, cores['limpa']))
 elif imc >= 30 and imc <= 39.9:
     print('{}Voce esta com obesidade!!{} {}Procure um médico {}!!!{}'.format(cores['vermelho'], cores['limpa'], cores['vermelhoSub'], cores['limpa'], nome))
+    print('Seu IMC é de {}{:.2f}{}'.format(cores['vermelho'], imc, cores['limpa']))
 else:
     print('{}Voce esta com obesidade grave!! Procure um médico URGENTE!!!{}'.format(cores['vermelhoSub'], cores['limpa']))
+    print('Seu IMC é de {}{:.2f}{}'.format(cores['vermelhoSub'], imc, cores['limpa']))
